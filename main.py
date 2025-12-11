@@ -24,5 +24,3 @@ async def root(request: Request):
     result = await solve_quiz(quiz_url, EMAIL, SECRET)
     return result
 
-if __name__ == "__main__":
-    uvicorn.run("main:app", host="0.0.0.0", port=10000)
